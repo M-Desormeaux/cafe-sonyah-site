@@ -48,15 +48,19 @@ export default function Home() {
           </h1>
         </div>
         <div className="f-body max-w-xl p-6 ">
-          <div className="bg rounded-lg border-2 border-orange-900 bg-orange-100 p-4 drop-shadow-lg">
-            <p className="indent-8 text-orange-900">{aboutMeContent.p1}</p>
-            <p className="indent-8 text-orange-900">{aboutMeContent.p2}</p>
+          <div className="bg rounded-lg border-2 border-orange-900 bg-orange-50 p-4 drop-shadow-lg">
+            <p className="indent-8 tracking-wide text-orange-900">
+              {aboutMeContent.p1}
+            </p>
+            <p className="indent-8 tracking-wide text-orange-900">
+              {aboutMeContent.p2}
+            </p>
           </div>
           <div className="flex w-full flex-col gap-3 pt-6 sm:grid sm:grid-cols-2">
             {externalLinks.map((link, index) => {
               return (
                 <a
-                  className="flex justify-center rounded-lg bg-orange-900 p-3 text-orange-200 drop-shadow-lg hover:bg-orange-100 hover:text-orange-900 focus:bg-orange-100 focus:text-orange-900"
+                  className="flex justify-center rounded-lg bg-orange-900 p-3 tracking-wide text-orange-200 drop-shadow-lg hover:bg-orange-100 hover:text-orange-900 focus:bg-orange-100 focus:text-orange-900"
                   key={index}
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
