@@ -60,7 +60,7 @@ export default function Home() {
             {externalLinks.map((link, index) => {
               return (
                 <a
-                  className="flex justify-center rounded-lg bg-orange-900 p-3 tracking-wide text-orange-200 drop-shadow-lg hover:bg-orange-100 hover:text-orange-900 focus:bg-orange-100 focus:text-orange-900"
+                  className="flex justify-center rounded-lg bg-orange-900 p-3 tracking-wide text-orange-200 drop-shadow-lg hover:bg-orange-50 hover:text-orange-900 focus:bg-orange-50 focus:text-orange-900"
                   key={index}
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
