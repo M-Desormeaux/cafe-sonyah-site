@@ -41,14 +41,14 @@ export default function Home() {
         {/* Icon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="tile flex min-h-screen flex-col items-center bg-orange-200 py-8">
+      <main className="tile flex min-h-screen flex-col items-center bg-orange-100 py-8">
         <div className="flex w-full justify-center bg-orange-900 p-3">
           <h1 className="f-heading text-4xl text-orange-200">
             {aboutMeContent.heading}
           </h1>
         </div>
         <div className="f-body max-w-xl p-6 ">
-          <div className="bg rounded-lg border-2 border-orange-900 bg-orange-200 p-4 drop-shadow-lg">
+          <div className="bg rounded-lg border-2 border-orange-900 bg-orange-100 p-4 drop-shadow-lg">
             <p className="indent-8 text-orange-900">{aboutMeContent.p1}</p>
             <p className="indent-8 text-orange-900">{aboutMeContent.p2}</p>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
             {externalLinks.map((link, index) => {
               return (
                 <a
-                  className="flex justify-center rounded-lg bg-orange-900 p-3 text-orange-200 drop-shadow-lg hover:bg-orange-200 hover:text-orange-900 focus:bg-orange-200 focus:text-orange-900"
+                  className="flex justify-center rounded-lg bg-orange-900 p-3 text-orange-200 drop-shadow-lg hover:bg-orange-100 hover:text-orange-900 focus:bg-orange-100 focus:text-orange-900"
                   key={index}
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
