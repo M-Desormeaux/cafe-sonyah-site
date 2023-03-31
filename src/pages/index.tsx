@@ -49,12 +49,14 @@ export default function Home() {
         </div>
         <div className="f-body max-w-xl p-6 ">
           <div className="bg rounded-lg border-2 border-orange-900 bg-orange-50 p-4 drop-shadow-lg">
-            <p className="indent-8 tracking-wide text-orange-900">
-              {aboutMeContent.p1}
-            </p>
-            <p className="indent-8 tracking-wide text-orange-900">
-              {aboutMeContent.p2}
-            </p>
+            {aboutMeContent.about.map((sentence, index) => (
+              <p
+                className="py-1 indent-8 tracking-wide text-orange-900"
+                key={index}
+              >
+                {sentence}
+              </p>
+            ))}
           </div>
           <div className="flex w-full flex-col gap-3 pt-6 sm:grid sm:grid-cols-2">
             {externalLinks.map((link, index) => {
