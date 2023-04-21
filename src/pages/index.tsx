@@ -4,10 +4,10 @@ import { externalLinks, aboutMeContent, footer } from "@/content/homepage";
 
 const metaDetails = {
   title: "Cafe Sonyah",
-  desc: "Join Sonia on her gaming adventures! From Skyrim to party games, and everything in between, watch and engage with this friendly Twitch streamer. Come for the games, stay for the community!",
+  desc: "Join Sonia's inclusive community to connect, chat, and make new friends. Fun times and good conversations with a welcoming space for everyone!",
   image: "",
   keywords:
-    "Twitch streamer, gaming, Skyrim, party games, community, video games, multiplayer",
+    "Twitch streamer, gaming, party games, community, multiplayer, safe space, trans, ally, lgbtq",
   url: "https://cafesonyah.mikedez.com",
 };
 
